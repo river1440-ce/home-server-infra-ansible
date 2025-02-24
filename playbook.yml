@@ -1,0 +1,9 @@
+- name: My first play
+  hosts: home_lab_servers
+  tasks:
+    - name: Ping my hosts
+      ansible.builtin.ping:
+
+    - name: Print message
+      ansible.builtin.debug:
+        msg: "Hello world, Inventory Hostname is {{ inventory_hostname }}"

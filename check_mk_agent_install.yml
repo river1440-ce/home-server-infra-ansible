@@ -1,0 +1,6 @@
+- name: Install and configure Checkmk server
+  hosts: home_lab_servers
+  roles:
+     - checkmk.general.agent
+  vars:
+      checkmk_agent_server_port: 5000
